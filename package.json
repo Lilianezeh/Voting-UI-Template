@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+ "scripts": {
   "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css",
   "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-  "build:ts": "tsc --watch"
-},
+  "build:ts": "tsc",
+  "build": "npm run build:css && npm run build:ts"
+}
   "keywords": [],
   "author": "",
   "license": "ISC",
